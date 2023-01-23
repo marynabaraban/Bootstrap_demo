@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2dba8eb06d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bar.Mar.Shop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#"><i class="far fa-user"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header bg-primary text-white">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Bag</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td> <img src="./img/Products/1.jpg" alt=""></td>
+                                        <td><a href="#">Flowers #1</a></td>
+                                        <td>$20.00</td>
+                                        <td>1</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td> <img src="./img/Products/2.jpg" alt=""></td>
+                                        <td><a href="#">Flowers #2</a></td>
+                                        <td>$17.00</td>
+                                        <td>1</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td> <img src="./img/Products/3.jpg" alt=""></td>
+                                        <td><a href="#">Flowers #3</a></td>
+                                        <td>$15.99</td>
+                                        <td>1</td>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">View bag</button>
+                              <button type="button" class="btn btn-primary">Checkout</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </li>
+                <!-- <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-search"></i></a>
+                </li> -->
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower1.jpeg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$30.00</small> $25.99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower2.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$35.00</small> $27.99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower3.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$30.00</small> $25.99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower4.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$40.00</small> $28.39
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower5.jfif" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$30.00</small> $22.99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-3">
+                    <div class="product-card">
+                        <div class="product-thumb">
+                            <a href="#"><img src="./img/flower6.jpg" alt=""></a>
+                        </div>
+                        <div class="product-details">
+                            <h4><a href="#">Flower</a></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis velit accusamus labore vitae beatae quam ea debitis aut placeat f</p>
+                            <div class="product-bottom-details d-flex justify-content-between">
+                                <div class="product-price">
+                                    <small>$28.00</small> $21.99
+                                </div>
+                                <div class="product-links">
+                                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <h4>Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Get Help</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Gift Card Balance</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Contacts</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="tel:+380999999999">+38 (099) 999 99 99</a></li>
+                            <li><a href="tel:+380999999999">+38 (044) 999 99 99</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <h4>Connect with Us</h4>
+                        <div class="footer-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    
+
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
